@@ -7,20 +7,20 @@ For sample automation, I used "Traveloka Landing Page" with scenario search a ho
 
 Folder Structure
 
-cypress/
-e2e
+cypress
+ e2e
   - search_hotelSteps.cy.js ==> step scenario
-pageobjects
+ pageobjects
   - search_hotelPO.js ==> to define elment which used for step 
-fixtures
+ fixtures
   - testdata.json ==> to save test data that i used and called on step
-reports
+ reports
   - videos ==> recording video during run the automation
   - index.html ==> report detail that we can open on browser    
-support
+ support
   - commands.js ==> To import our reference
   - e2e.js ==> To setup /import custome command
-node_module ==> all package /depedency 
+ node_module ==> all package /depedency 
   - cypressconfig.json ==> to setup global configuration
 
 Running Tests
