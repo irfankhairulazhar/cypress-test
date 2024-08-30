@@ -1,0 +1,11 @@
+{
+    "baseurl" : "https://www.traveloka.com/en-id",
+    "expectedHotel":"The Jayakarta Suites Bandun",
+    "hotelLocation" : "Bandung",
+    "expectedListHotel" : "460 properties found in Dago",
+    "expectedListHotelAfterFilterPrice": "127 properties found in Dago",
+    "expectedHotelLocations" : "Dago Atas, Dago"
+    
+    
+
+}
