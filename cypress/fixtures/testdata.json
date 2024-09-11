@@ -1,11 +1,30 @@
 {
-    "baseurl" : "https://www.traveloka.com/en-id",
-    "expectedHotel":"The Jayakarta Suites Bandun",
+    "traveloka": {
+    "expectedHotel":"The Jayakarta Suites Bandung",
     "hotelLocation" : "Bandung",
     "expectedListHotel" : "460 properties found in Dago",
     "expectedListHotelAfterFilterPrice": "127 properties found in Dago",
-    "expectedHotelLocations" : "Dago Atas, Dago"
-    
+    "expectedHotelLocations" : "Dago Atas, Dago",
+    "amountToSetMaxPrice": "1000000",
+    "displayExpectedMaxPrice": "1.000.000"
     
 
+    },
+
+    "swaglabls" : {
+    "usernameSwagLabs" : "standard_user",
+    "passwordSWagLabs": "secret_sauce",
+    "itemName": "Test.allTheThings() T-Shirt (Red)",
+    "itemPrice": "15.99",
+    "name": "lalala",
+    "callName": "lili",
+    "homeCode": "17112",
+    "itemTotal": 15.99,
+    "itemTax": 1.28,
+    "totalPaid": 17.27
+
+    }
+
+    
+    
 }

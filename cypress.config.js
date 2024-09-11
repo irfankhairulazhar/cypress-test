@@ -1,12 +1,15 @@
-const { defineConfig } = require("Cypress");
+const { defineConfig } = require("cypress");
+const env = require('./cypress.env.config.js');
 
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-    screenshotOnRunFailure=true;
-    require('cypress-mochawesome-reporter/plugin')(on);
+     
+          screenshotOnRunFailure=true;
+          require('cypress-mochawesome-reporter/plugin')(on);
+     
+    
     },
     video: true,
     videoUploadOnPasses: false,
@@ -14,4 +17,13 @@ module.exports = defineConfig({
     videosFolder: 'cypress/videos'
     
   },
-});
+
+    env: {
+      baseurl: env.baseUrl,
+      swagLabs: env.swagLabs,
+      prabank: env.prabank
+    }
+  
+
+ 
+  });

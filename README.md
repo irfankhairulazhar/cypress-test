@@ -24,7 +24,7 @@ cypress/
 └── cypressconfig.json ==> to setup global configuration
 
 Running Tests
-  To run the tests, use the following commands:
+  To run the tests, use the following commands: 
 
   - Run tests in headless mode: npx cypress run
   - Run test without headless mode : npx cypress run --headed
