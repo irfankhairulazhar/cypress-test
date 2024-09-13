@@ -1,9 +1,12 @@
 import loginSwagLabs from "../pageobject/swaglabs/swaglabsLogin"
+import { createRandomUser } from "../support/randomUsers"
+
 
 
 describe('My First Test', () => {
 
 const ls = new loginSwagLabs();
+const rd = new createRandomUser();
 
 let userdata
     beforeEach(    ()=> {
@@ -19,7 +22,7 @@ let userdata
         ls.openCheckoutMenu();
         ls.checkDetailIteamsOnCheckout(userdata.swaglabls.itemName, userdata.swaglabls.itemPrice);
         ls.buttonCheckout();
-        ls.userData(userdata.swaglabls.name, userdata.swaglabls.callName, userdata.swaglabls.homeCode)
+        ls.userData(rd.first_name , rd.last_name, rd.postalCode)
         ls.continueButton();
         ls.verifyTotalPrice(userdata.swaglabls.itemTotal, userdata.swaglabls.itemTax, userdata.swaglabls.totalPaid);
 

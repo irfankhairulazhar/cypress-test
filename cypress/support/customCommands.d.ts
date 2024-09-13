@@ -13,6 +13,7 @@ declare namespace Cypress {
         assertVisibleAdContainsVAlue(): Chainable<any>
         resultPriceCalculation(): Chainable<any>
         verifyTotalPrice(): Chainable<any>
+        getElement(): Chainable <any>
 
        
   }

@@ -5,6 +5,11 @@ class loginSwagLabs
 
     openSwaglabsLandingPage (swagLabs) {
         cy.visit(swagLabs);
+        cy.url().then((url) => {
+            expect(url).to.contain(swagLabs);
+
+        }) 
+        
     }
 
     inputCredetialLogin (usernameSwagLabs, passwordSWagLabs) {
@@ -35,10 +40,10 @@ class loginSwagLabs
         cy.customeClick(checkout.checkoutButton);
     }
 
-    userData (name, callName, homeCode) {
-        cy.inputText(checkout.inputFirstName, name);
-        cy.inputText(checkout.inputLastName, callName);
-        cy.inputText(checkout.inputPostalCode, homeCode);
+    userData (first_name, last_name, postalCode) {
+        cy.inputText(checkout.inputFirstName, first_name);
+        cy.inputText(checkout.inputLastName, last_name);
+        cy.inputText(checkout.inputPostalCode, postalCode);
 
     }
 

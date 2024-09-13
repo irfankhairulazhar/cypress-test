@@ -10,15 +10,7 @@ describe('parabank register', () => {
 
    it.only('register new user parabank', () => {
     rs.openParaBank(Cypress.env('prabank'));
-    rs.inputFullName(rd.invalidFirstName);
-    rs.inputLastOfName(rd.last_name);
-    rs.inputAddress(rd.address);
-    rs.inputCity(rd.city);
-    rs.inputStreet(rd.street);
-    rs.inputPostalCode(rd.postalCode);
-    rs.inputPhone(rd.phone);
-    rs.inputSsn(rd.ssn);
-    rs.inputNewusername(rd.usernames);
+    rs.registerNewCustomerWithValidData(rd.invalidFirstName, rd.last_name, rd.address, rd.city, rd.street, rd.postalCode, rd.phone, rd.ssn, rd.usernames);
    })
 
     
