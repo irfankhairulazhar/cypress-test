@@ -1,4 +1,4 @@
-import { searchHotel } from "../support/selector";
+import { searchHotel } from "../../selector";
 class find_hotel
     
 {

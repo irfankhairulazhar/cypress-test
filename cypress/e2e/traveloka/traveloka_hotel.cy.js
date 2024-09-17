@@ -1,4 +1,4 @@
-import find_hotel from "../pageobject/traveloka";
+import find_hotel from "../../support/pageobject/find_hotel/traveloka";
 
 
 describe('My First Test', () => {

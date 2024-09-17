@@ -1,4 +1,4 @@
-import { logins,checkout } from '../../support/selector';
+import { logins,checkout } from '../../selector';
 
 class loginSwagLabs 
 {

@@ -1,5 +1,5 @@
-import loginSwagLabs from "../pageobject/swaglabs/swaglabsLogin"
-import { createRandomUser } from "../support/randomUsers"
+import loginSwagLabs from "../../support/pageobject/swaglabs/swaglabsLogin"
+import { createRandomUser } from "../../support/randomUsers"
 
 
 

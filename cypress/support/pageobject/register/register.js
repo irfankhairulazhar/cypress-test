@@ -1,4 +1,4 @@
-import { register } from '../../support/selector'
+import { register } from '../../selector'
 
 class registers {
 

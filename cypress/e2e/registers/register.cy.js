@@ -1,5 +1,5 @@
-import registers from "../pageobject/register/register";
-import { createRandomUser } from "../support/randomUsers"
+import registers from "../../support/pageobject/register/register";
+import { createRandomUser } from "../../support/randomUsers"
 
 
 describe('parabank register', () => {

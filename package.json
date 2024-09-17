@@ -6,12 +6,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:run-parabank-headless": "cypress run --spec 'cypress/e2e/register.cy.js' --headless",
-    "cypress:run-parabank-headed": "cypress run --spec 'cypress/e2e/register.cy.js' --headed",
-    "cypress:run-swaglabs-headless": "cypress run --spec 'cypress/e2e/swagLabs.cy.js' --headless",
-    "cypress:run-swaglabs-headed": "cypress run --spec 'cypress/e2e/swagLabs.cy.js' --headed",
-    "cypress:run:-traveloka-headless": "cypress run --spec 'cypress/e2e/search_hotelSteps.cy.js' --headless",
-    "cypress:run:-traveloka-headed": "cypress run --spec 'cypress/e2e/search_hotelSteps.cy.js' --headed"
+    "cypress:run-parabank-headless": "cypress run --spec 'cypress/e2e/registers/register.cy.js' --headless",
+    "cypress:run-parabank-headed": "cypress run --spec 'cypress/e2e/registers/register.cy.js' --headed",
+    "cypress:run-swaglabs-headless": "cypress run --spec 'cypress/e2e/labs/swagLabs.cy.js' --headless",
+    "cypress:run-swaglabs-headed": "cypress run --spec 'cypress/e2e/labs/swagLabs.cy.js' --headed",
+    "cypress:run-traveloka-headless": "cypress run --spec 'cypress/e2e/traveloka/traveloka_hotel.cy.js' --headless",
+    "cypress:run-traveloka-headed": "cypress run --spec 'cypress/e2e/traveloka/traveloka_hotel.cy.js' --headed"
+  
   },
   
   "author": "irfan",
