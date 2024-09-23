@@ -31,7 +31,8 @@
 Cypress.Commands.add('getElement', (selector) => {
     if (selector.startsWith('//') || selector.startsWith('(')) {
         return cy.xpath(selector);
-    } else {
+    }
+    else {
         return cy.get(selector);
     }
 });
@@ -42,7 +43,7 @@ Cypress.Commands.add('customeClick', (selector) => {
 
 
 Cypress.Commands.add('inputText', (selector, text, options = {}) => {
-    cy.getElement(selector).type(text,options);
+    cy.getElement(selector).clear().type(text,options);
 })
 
 Cypress.Commands.add('scrollToElement', (selector) => {

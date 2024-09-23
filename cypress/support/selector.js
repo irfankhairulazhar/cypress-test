@@ -50,6 +50,20 @@ export const register = {
     addressZipCode: "[name='customer.address.zipCode']",
     userNumber: "[name='customer.phoneNumber']",
     ssn: "[name='customer.ssn']",
-    newUsername: "[name='customer.username']"
+    newUsername: "[name='customer.username']",
+    passwordBank: "[name='customer.password']",
+    confirmPassBank: "#repeatedPassword",
+    regisButton: "//input[@value='Register']",
+    successRegister: "#rightPanel > p",
+    invalidFirstName: "//span[@id='customer.firstName.errors']",
+    invalidLastname: "//span[@id='customer.lastName.errors']",
+    invalidAddress: "//span[@id='customer.address.street.errors']",
+    invalidCity: "//span[@id='customer.address.city.errors']",
+    invalidState: "[id='customer.address.state.errors']",
+    invalidZipCode: "[id='customer.address.zipCode.errors']",
+    invalidSSN: "[id='customer.ssn.errors']",
+    invalidUserName: "[id='customer.username.errors']",
+    invalidPassword: "[id='customer.password.errors']",
+    invalidReconfirmPass: "[id='repeatedPassword.errors']"
 
 }

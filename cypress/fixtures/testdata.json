@@ -23,6 +23,27 @@
     "itemTax": 1.28,
     "totalPaid": 17.27
 
+    },
+
+    "parabank" : {
+    "usernameBank" : "testest",
+    "passwordBank" : "test12345",
+    "confirmPassBank" : "test12345",
+    "accBankCreated": "Your account was created successfully. You are now logged in.",
+    "errorFirstName": "First name is required.",
+    "errorLastName": "Last name is required.",
+    "errorAddress": "Address is required.",
+    "errorCity": "City is required.",
+    "errorState": "State is required.",
+    "errorZipCode": "Zip Code is required.",
+    "errorSSN": "Social Security Number is required.",
+    "errorUserName": "Username is required.",
+    "errorPassword": "Password is required.",
+    "errorConfirmPassword": "Password confirmation is required.",
+    "paasNotMatch": "test1234",
+    "errorPassNotMatch": "Passwords did not match."
+
+
     }
 
     
