@@ -11,7 +11,9 @@
     "cypress:run-swaglabs-headless": "cypress run --spec 'cypress/e2e/labs/swagLabs.cy.js' --headless",
     "cypress:run-swaglabs-headed": "cypress run --spec 'cypress/e2e/labs/swagLabs.cy.js' --headed",
     "cypress:run-traveloka-headless": "cypress run --spec 'cypress/e2e/traveloka/traveloka_hotel.cy.js' --headless",
-    "cypress:run-traveloka-headed": "cypress run --spec 'cypress/e2e/traveloka/traveloka_hotel.cy.js' --headed"
+    "cypress:run-traveloka-headed": "cypress run --spec 'cypress/e2e/traveloka/traveloka_hotel.cy.js' --headed",
+    "cypress:run-logique-headless": "cypress run --spec 'cypress/e2e/logique/logique_register.cy.js' --headless",
+    "cypress:run-logique-headed": "cypress run --spec 'cypress/e2e/logique/logique_register.cy.js' --headed"
   
   },
   

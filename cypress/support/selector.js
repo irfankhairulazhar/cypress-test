@@ -67,3 +67,38 @@ export const register = {
     invalidReconfirmPass: "[id='repeatedPassword.errors']"
 
 }
+
+export const logique = {
+    firtsName: "[placeholder='Nama Depan']",
+    lastName: "[placeholder='Nama Belakang']",
+    pob: "[placeholder='Tempat Lahir']",
+    datePickerColumn: "//div[@class='container max-w-3xl mx-auto']//div[@class='mb-5']//input[@class='dp__pointer dp__input_readonly dp__input dp__input_icon_pad dp__input_reg  undefined']",
+    dateChooses: "//div[@class='dp__calendar_wrap']//div[@class='dp__calendar_item']/div",
+    selectDate: "//span[@class='dp__action dp__select']",
+    userIdNumber: "[placeholder='Nomor KTP']",
+    uploadEktp: "[type='file']",
+    columnEktp: "//span[@class='break-all pr-2 text-black']",
+    columnOccpation: "[aria-placeholder='Pilih Pekerjaan']",
+    optionOccupation: "//li[@id='multiselect-option-IBU RUMAH TANGGA']",
+    companyNames: "[placeholder='Nama Perusahaan']",
+    companyAddress: ".container div:nth-of-type(3) .p-3",
+    companyNumber: "[placeholder='Nomor Telepon Perusahaan']",
+    hasNpwp: "//button[.='Ada NPWP']",
+    inputNpwp: "[placeholder='Nomor NPWP']",
+    ektpDatePickerColumn: ".mb-2 [placeholder='DD/MM/YYYY']",
+    columnVehicle: "[aria-placeholder='Jenis Kendaraan']",
+    vehicleOption: "//li[@id='multiselect-option-bike and car']",
+    findVehicle: "[aria-placeholder='Pilih Kendaraan']",
+    purposes: "[aria-placeholder='Pilih Tujuan']",
+    provinces: "[aria-placeholder='Pilih Provinsi']",
+    userCity: "[aria-placeholder='Pilih Kota']",
+    userAddress: "//div[@class='container max-w-3xl mx-auto']//div[1]/div[@class='mb-5 min-h-[148px]']/div[@class='relative']",
+    userEmail: "[name='email']",
+    userNumber: "[placeholder='Nomor Telepon']",
+    userPass: "[name='new_password']",
+    userRecomPass: "[name='confirm_password']"
+
+
+
+
+}

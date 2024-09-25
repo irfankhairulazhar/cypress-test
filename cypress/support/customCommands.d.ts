@@ -14,6 +14,10 @@ declare namespace Cypress {
         resultPriceCalculation(): Chainable<any>
         verifyTotalPrice(): Chainable<any>
         getElement(): Chainable <any>
+        visitWithAuth(): Chainable <any>
+        selectNextDays(): Chainable<any>
+        forceUploadFile(): Chainable<any>
+        inputAndSelect(): Chainable<any>
 
        
   }

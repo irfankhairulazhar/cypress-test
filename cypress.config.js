@@ -20,7 +20,8 @@ module.exports = defineConfig({
     env: {
       baseurl: env.baseUrl,
       swagLabs: env.swagLabs,
-      prabank: env.prabank
+      prabank: env.prabank,
+      logique: env.logique
     }
   
 

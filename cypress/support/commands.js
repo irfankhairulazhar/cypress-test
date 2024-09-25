@@ -104,19 +104,50 @@ Cypress.Commands.add('assertValueLessThan', (selector, threshold) => {
         expect(totalPrice).to.equal(totalPaid);
 
 
-        })
+        });
 
-    })
- })
+    });
 
+  });
 
+});
 
+  Cypress.Commands.add('visitWithAuth', (url, username, password) => {
+    cy.visit(url, {
+      auth: {
+        username: username,
+        password: password,
+      },
+    });
+});
 
+    Cypress.Commands.add('selectNextDays', (datePickerSection, daySelector, selectDate) => {
+        const today = new Date();
+        const currentDay = today.getDate();
+        cy.customeClick(datePickerSection);
+        cy.waitInSecounds(2);
+        cy.customeClick(`${daySelector}[.='${currentDay}']`);
+        cy.customeClick(selectDate); 
     
+});
+
+    Cypress.Commands.add('forceUploadFile', (fileName, inputSelector) => {
+        const filePath = `cypress/fixtures/${fileName}`;
+        cy.getElement(inputSelector).selectFile(filePath, { force: true }); 
+});
+
+    Cypress.Commands.add('inputAndSelect', (selector, text) => {
+        cy.log(`Typing text: ${text}`); 
+        cy.get(selector).clear().type(text).type('{Enter}');
+
+});
+  
+
+        
+  
+
       
 
-    
-})
 
 
 

@@ -25,6 +25,7 @@ jobs:
             cypress/e2e/labs/swagLabs.cy.js,
             cypress/e2e/registers/register.cy.js,
             cypress/e2e/traveloka/traveloka_hotel.cy.js
+            cypress/e2e/logique/logique_register.cy.js
 
       # Upload screenshots if tests fail
 

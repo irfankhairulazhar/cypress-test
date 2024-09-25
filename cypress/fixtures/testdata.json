@@ -44,6 +44,19 @@
     "errorPassNotMatch": "Passwords did not match."
 
 
+    }, 
+
+    "logique" : {
+        "username": "jkt",
+        "password": "jogja",
+        "occ": "Ibu Rumah Tangga",
+        "opVehicle": "Kendaraan Penumpang",
+        "purpose": "Hadiah",
+        "province": "Papua",
+        "cities": "nabire",
+        "pass": "*test123",
+        "rePass": "*test123"
+
     }
 
     
