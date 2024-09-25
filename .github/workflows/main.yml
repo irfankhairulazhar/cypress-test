@@ -17,15 +17,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Run specific Cypress test files  
+      
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        with:
-          spec:
-            cypress/e2e/labs/swagLabs.cy.js,
-            cypress/e2e/registers/register.cy.js,
-            cypress/e2e/traveloka/traveloka_hotel.cy.js
-            cypress/e2e/logique/logique_register.cy.js
 
       # Upload screenshots if tests fail
 
