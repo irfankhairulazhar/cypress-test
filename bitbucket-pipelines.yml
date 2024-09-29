@@ -1,0 +1,25 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: cypress/included
+
+pipelines:
+  default:
+    - step:
+        name: Run Cypress Tests (Headless)
+        caches:
+          - node
+        script:
+          - npm install                               # Install dependencies
+          - npm install mochawesome
+          - npm run cypress:run-parabank-headless    # Run Parabank tests headlessly
+          - npm run cypress:run-swaglabs-headless     # Run SwagLabs tests headlessly
+          - npm run cypress:run-traveloka-headless    # Run Traveloka tests headlessly
+          - npm run cypress:run-logique-headless      # Run Logique tests headlessly
+        artifacts:
+          - mochawesome-report/**
+          - cypress/videos/**   # Include Cypress videos
+          - cypress/screenshots/** # Include Cypress screenshots
+          - cypress/results/**   # Include Cypress result files (if you save them)
