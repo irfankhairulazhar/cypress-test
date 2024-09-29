@@ -97,8 +97,15 @@ export const logique = {
     userNumber: "[placeholder='Nomor Telepon']",
     userPass: "[name='new_password']",
     userRecomPass: "[name='confirm_password']"
+}
 
 
+export const herokuapp = {
+    fileDownload: "[href='/download']",
+    karateLogo: "[href='download/karate-logo.png']",
+    fileTxt: "[href='download/selenide-intro.txt']",
+    resume: "[href='download/8th class physics.docx']",
+    pdfFile: "[href='download/dummy.pdf']"
 
 
 }

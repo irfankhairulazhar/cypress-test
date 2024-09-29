@@ -27,6 +27,10 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" />
 /// <reference types='cypress-tags' />
+import mammoth from 'mammoth';
+require('cy-verify-downloads').addCustomCommand();
+require('cypress-downloadfile/lib/downloadFileCommand')
+
 
 Cypress.Commands.add('getElement', (selector) => {
     if (selector.startsWith('//') || selector.startsWith('(')) {
@@ -141,6 +145,36 @@ Cypress.Commands.add('assertValueLessThan', (selector, threshold) => {
         cy.get(selector).clear().type(text).type('{Enter}');
 
 });
+
+    Cypress.Commands.add('verifyDownloadAndContent', (fileName, expectedContent) => {
+        cy.verifyDownload(fileName).then(() => {
+        cy.readFile(`cypress/downloads/${fileName}`)
+            .should('eq', expectedContent);
+    });
+});
+
+Cypress.Commands.add('readDocx', (filePath) => {
+    return cy.readFile(filePath, 'binary').then((binaryContent) => {
+        return mammoth.convertToText({ buffer: binaryContent }).then((result) => {
+            return result.value; // The plain text from the .docx
+        });
+    });
+});
+
+
+// const pdf = require('pdf-parse');
+
+// // Create a Cypress custom command to use pdf-parse
+// Cypress.Commands.add('parsePdf', (filePath) => {
+//     return cy.readFile(filePath, 'binary')
+//       .then((file) => {
+//         const dataBuffer = Buffer.from(file, 'binary'); // Convert binary data to Buffer
+//         return pdf(dataBuffer);
+//       })
+//       .then((data) => {
+//         return data.text;  // Return the text extracted from the PDF
+//       });
+//   });
   
 
         

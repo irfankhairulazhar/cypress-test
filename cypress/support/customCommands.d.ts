@@ -18,6 +18,7 @@ declare namespace Cypress {
         selectNextDays(): Chainable<any>
         forceUploadFile(): Chainable<any>
         inputAndSelect(): Chainable<any>
+        verifyDownloadAndContent(): Chainable<any>
 
        
   }

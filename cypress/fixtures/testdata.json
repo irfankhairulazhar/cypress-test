@@ -57,6 +57,11 @@
         "pass": "*test123",
         "rePass": "*test123"
 
+    },
+
+    "heroapp" : {
+        "selenideIntro": "Hello, Selenide world!"
+
     }
 
     
