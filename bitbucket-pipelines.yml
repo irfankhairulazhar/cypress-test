@@ -6,14 +6,13 @@
 image: cypress/included
 
 pipelines:
-  branches:
-    main:
+  default
     - step:
         name: Run Cypress Tests (Headless)
         caches:
           - node
         script:
-          - echo "Building and deploying on main branch..."
+          - echo "Building and deploying on every push..."
           - npm install                               # Install dependencies
           - npm install mochawesome
           - npm run cypress:run-parabank-headless    # Run Parabank tests headlessly
