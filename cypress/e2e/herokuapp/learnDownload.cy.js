@@ -35,6 +35,7 @@ beforeEach( ()=> {
     it('download pdf file', ()=> {
         hr.openHerokupAppLandingPage(Cypress.env('herokuapp'));
         hr.downloadPdfFile();
+        
     })
 
 })
